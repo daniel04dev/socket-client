@@ -17,6 +17,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "lodash"
+           ],
             "outputPath": "dist/Basico",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -124,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "Basico"
+  "defaultProject": "Basico",
+  "cli": {
+    "analytics": "c2e06526-f521-4d2e-8ab7-b5867c3259ee"
+  }
 }
